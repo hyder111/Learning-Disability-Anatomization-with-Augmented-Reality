@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@android:color/white"
+
+    tools:context=".FormActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ebebeb">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+
+
+            android:background="@color/colorPrimary"
+            app:title="Patients Information"
+            app:titleTextColor="@android:color/white"
+            app:titleMarginStart="70dp"
+
+            android:layout_height="?attr/actionBarSize">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp"
+            android:textColorHint="@color/colorPrimaryDark">
+            <EditText
+                android:id="@+id/childname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:hint="Child's Name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:ems="10"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp"
+            android:textColorHint="@color/colorPrimaryDark">
+            <EditText
+                android:id="@+id/parentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:hint="Father's/Mother's Name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:ems="10"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp"
+            android:textColorHint="@color/colorPrimaryDark">
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Age"
+                android:ems="10"
+
+                android:inputType="numberDecimal"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gender"
+   android:layout_marginTop="25dp"
+    android:textSize="23sp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusable="false"
+            android:ems="10"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp"
+            android:textColorHint="@color/colorPrimaryDark">
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:hint="Date of Birth (dd/mm/yyyy)"
+                android:ems="10"
+                android:focusable="false"
+
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:ems="10"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp"
+            android:textColorHint="@color/colorPrimaryDark">
+            <EditText
+                android:id="@+id/headSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Head Circumference (cm)"
+                android:ems="10"
+
+                android:inputType="numberDecimal"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Fits"
+                android:textSize="23sp" />
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"/>
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:checked="true"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"/>
+
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Hygiene"
+                android:layout_marginTop="25dp"
+                android:textSize="23sp"/>
+            <Spinner
+                android:id="@+id/spinnerHygiene"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fine Motor Skills"
+                android:layout_marginTop="25dp"
+                android:textSize="23sp"/>
+            <Spinner
+                android:id="@+id/spinnerFine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gross Motor Skills"
+                android:layout_marginTop="25dp"
+                android:textSize="23sp"/>
+            <Spinner
+                android:id="@+id/spinnergross"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="115dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expressive Skills"
+                android:layout_marginTop="25dp"
+                android:textSize="23sp"/>
+            <Spinner
+                android:id="@+id/spinnerExpressive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/rounded_corners"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+            </Spinner>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</ScrollView>
