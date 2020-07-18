@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ex1">
+        <item>Collecting Data from files</item>
+        <item>Sending Data to Server for Prediction</item>
+        <item>Retrieving Data</item>
+
+
+    </string-array>
+</resources>

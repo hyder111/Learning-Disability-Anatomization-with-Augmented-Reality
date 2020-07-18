@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ResultActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Result"
+            android:textColor="#e685df"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="523dp"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="12">
+
+
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="44dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="Name"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Father's/Mother's Name">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/mname"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Age">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:text="Gender">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Date of Birth">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="44dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Head Size">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/headsize"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Fits">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/fits"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="7"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="Hygiene Rate out of 10">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/hygiene"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Motor Skills Rate out of 10">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/motor"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Gross Skills Rate out of 10">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/gross"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:text="Expressive Skills Rate out of 10">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/expressive"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="10"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text=""></TextView>
+        </GridLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:id="@+id/barChart">
+
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Attention Span"
+            android:textColor="#e685df"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="5">
+
+            <TextView
+
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="IQ Test"
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/iq_span"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""></TextView>
+
+            <TextView
+
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Arithmetic Test"
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/arith_span"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""></TextView>
+
+            <TextView
+
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Similarity Test"
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/similarity_span"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""></TextView>
+
+            <TextView
+
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Shape Test"
+
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/shape_span"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""></TextView>
+
+            <TextView
+
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Speech Test"
+
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/speech_span"
+                android:layout_width="198dp"
+                android:layout_height="44dp"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""></TextView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/prediction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=""></TextView>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corners"
+            android:text="Click to Save Result "
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="20dp"
+    android:rowCount="1"
+    android:columnCount="2">
+
+    <Button
+        android:id="@+id/again"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_corners"
+        android:stateListAnimator="@null"
+        android:text="Start Again"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Exit"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+

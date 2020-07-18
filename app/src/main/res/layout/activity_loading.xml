@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoadingActivity">
+
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/Prediciting"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moving"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginEnd="28dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:texts="@array/ex1"
+        app:timeout="3000" />
+
+    <TextView
+        android:id="@+id/moving"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="41dp"
+        android:gravity="center"
+        android:text="Predicting..."
+        android:textColor="#eb4123"
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+
+
+        android:layout_below="@+id/glass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="148dp"
+        android:text="100 %"
+        android:textColor="#eb4123"
+        android:textSize="25sp">
+
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="245dp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/background"
+        android:layout_height="26dp"
+        android:layout_below="@+id/percentage"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="174dp">
+
+
+    </ProgressBar>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/glass"
+        android:layout_width="78dp"
+        android:layout_height="153dp"
+
+        android:layout_below="@+id/Prediciting"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:src="@drawable/hour_glass" />
+
+</RelativeLayout>
